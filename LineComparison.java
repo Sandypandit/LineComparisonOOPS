@@ -33,8 +33,8 @@ public class LineComparison {
 		Scanner sc = new Scanner(System.in);
 		System.out.printf("Enter points of line %d in Following Sequence"
 				+ "\nX1\nX2\nY1\nY2\n",lineNo++);
-		int x1=sc.nextInt(); 
-		int x2=sc.nextInt(); //getting end points of lines
+		int x1=sc.nextInt(); //getting end points of lines
+		int x2=sc.nextInt(); 
 		int y1=sc.nextInt(); 
 		int y2=sc.nextInt();
 		
