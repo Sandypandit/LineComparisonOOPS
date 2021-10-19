@@ -27,14 +27,26 @@ public class LineComparison {
 			}
 		
 	}
+	static void Compare(Double lineOne, Double lineTwo) {
+		//using compareto() method of java
+		int check = lineOne.compareTo(lineTwo);
+		if(check == 0){
+			System.out.println("The length of line 1 is equals to line 2");
+		    }
+		else if(check > 0){
+			System.out.println("The length of line 1 is greater than  line 2");
+                   }
+		else
+			System.out.println("The length of line 1 is less than line 2");
+	}
 	
-	public LineComparison() {
+	public LineComparison() { //constructor
 		int lineNo = 1;
 		Scanner sc = new Scanner(System.in);
 		System.out.printf("Enter points of line %d in Following Sequence"
 				+ "\nX1\nX2\nY1\nY2\n",lineNo++);
-		int x1=sc.nextInt(); 
-		int x2=sc.nextInt(); //getting end points of lines
+		int x1=sc.nextInt(); //getting end points of lines
+		int x2=sc.nextInt(); 
 		int y1=sc.nextInt(); 
 		int y2=sc.nextInt();
 		
@@ -53,6 +65,9 @@ public class LineComparison {
 		
 		//passing line 1 and line 2 lengths in Equals method
 		Equal(line1.Length(),line2.Length());
+		
+		//passing line 1 and line 2 lengths in Compare method
+		Compare(line1.Length(),line2.Length());
 
 		
 	}
