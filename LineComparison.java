@@ -6,7 +6,7 @@ public class LineComparison {
 	int x1=0, x2=0, y1=0, y2=0;
 	
 	public double Length() {
-	    //used decimal format to limit numbers after decimal
+	        //used decimal format to limit numbers after decimal
 		DecimalFormat df = new DecimalFormat("#.00");
 		
 		double length = Math.sqrt(Math.pow((this.x2-this.x1),2)+Math.pow((this.y2-this.y1),2));
